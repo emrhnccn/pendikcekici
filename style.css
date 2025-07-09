@@ -1,0 +1,322 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #fff7ed 0%, #ffe7ba 30%, #e3f0ff 70%, #d1c4e9 100%);
+  color: #222;
+}
+.header-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: url('resimler/arackurtarma.jpg') center center/cover no-repeat;
+  opacity: 0.18;
+  z-index: 0;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  filter: blur(1.5px) saturate(1.1);
+  pointer-events: none;
+}
+header {
+  position: relative;
+  background: linear-gradient(120deg, #fff7ed 0%, #ffe7ba 30%, #e3f0ff 70%, #d1c4e9 100%);
+  color: #1976d2;
+  text-align: center;
+  padding: 1.2rem 1rem 1rem 1rem;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  box-shadow: 0 4px 24px rgba(25, 118, 210, 0.08);
+  backdrop-filter: blur(8px) saturate(1.2);
+  -webkit-backdrop-filter: blur(8px) saturate(1.2);
+  background-clip: padding-box;
+}
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.60);
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  pointer-events: none;
+  z-index: 0;
+}
+header > * {
+  position: relative;
+  z-index: 1;
+}
+.logo {
+  max-width: 320px;
+  margin-bottom: 0.1rem;
+}
+.cta-buttons {
+  margin: 1.5rem 0 0 0;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1.2rem 0 0.5rem 0;
+}
+.card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(25, 118, 210, 0.07);
+  padding: 1.1rem 1.3rem;
+  min-width: 180px;
+  max-width: 240px;
+  flex: 1 1 180px;
+  font-size: 1.08rem;
+  color: #222;
+  transition: transform 0.18s, box-shadow 0.18s;
+  border: 1.5px solid #e3f0ff;
+}
+.card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(25, 118, 210, 0.13);
+  border-color: #1976d2;
+}
+.sss-cards .card {
+  background: #f7faff;
+  border: 1.5px solid #bbdefb;
+}
+.btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #1976d2 0%, #ff9800 100%);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 0.8rem 1.7rem;
+  margin: 0 0.5rem;
+  font-size: 1.15rem;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 2px 12px rgba(25, 118, 210, 0.09);
+  transition: background 0.2s, color 0.2s, transform 0.15s;
+}
+.btn:hover {
+  background: linear-gradient(90deg, #ff9800 0%, #1976d2 100%);
+  color: #fff;
+  transform: scale(1.06);
+}
+.btn.whatsapp {
+  background: linear-gradient(90deg, #25d366 0%, #1976d2 100%);
+  color: #fff;
+}
+.btn.whatsapp:hover {
+  background: linear-gradient(90deg, #1976d2 0%, #25d366 100%);
+}
+main {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+  padding: 2rem 1.5rem;
+}
+h1 {
+  font-size: 2.1rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 0.7rem;
+}
+h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+ul {
+  padding-left: 1.2rem;
+}
+section {
+  margin-bottom: 2.5rem;
+  padding: 1.2rem 0.5rem;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.65);
+  box-shadow: 0 1px 8px rgba(25, 118, 210, 0.04);
+  backdrop-filter: blur(8px) saturate(1.2);
+  -webkit-backdrop-filter: blur(8px) saturate(1.2);
+  border: 1.5px solid rgba(255,255,255,0.25);
+}
+section.fiyat {
+  background: linear-gradient(90deg, #fffde4cc 0%, #ffe7bacc 100%);
+  box-shadow: 0 2px 16px rgba(255, 152, 0, 0.08);
+}
+section.galeri {
+  background: linear-gradient(90deg, #e3f0ffcc 0%, #fff7edcc 100%);
+}
+.gallery-placeholder, .yorum-placeholder {
+  background: #f1f1f1;
+  border: 1px dashed #bbb;
+  color: #888;
+  padding: 1.2rem;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 0.7rem;
+}
+details {
+  margin-bottom: 1rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+  padding: 0.7rem 1rem;
+  border: 1px solid #eee;
+}
+footer {
+  text-align: center;
+  padding: 1.2rem 0;
+  background: #222;
+  color: #fff;
+  margin-top: 2rem;
+}
+.gallery-images {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.gallery-images img {
+  width: 170px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(25, 118, 210, 0.10);
+  border: 2px solid #e3f0ff;
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+.gallery-images img:hover {
+  transform: scale(1.06) rotate(-2deg);
+  box-shadow: 0 8px 32px rgba(25, 118, 210, 0.18);
+  border-color: #1976d2;
+}
+@media (max-width: 700px) {
+  .gallery-images img {
+    width: 100px;
+    height: 70px;
+  }
+}
+@media (max-width: 600px) {
+  main {
+    padding: 1rem 0.5rem;
+  }
+  .logo {
+    max-width: 140px;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+  .btn {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+  }
+}
+@media (max-width: 900px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+} 
+.iletisim {
+  background: linear-gradient(90deg, #e3f0ffcc 0%, #fff7edcc 100%);
+  margin-bottom: 2.5rem;
+  padding: 2rem 1rem 1.5rem 1rem;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(25, 118, 210, 0.10);
+}
+.iletisim-flex {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+.iletisim-form {
+  flex: 1 1 320px;
+  min-width: 260px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  background: rgba(255,255,255,0.85);
+  padding: 1.2rem 1rem;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(25, 118, 210, 0.07);
+}
+.iletisim-form label {
+  font-weight: 600;
+  color: #1976d2;
+  margin-bottom: 0.1rem;
+}
+.iletisim-form input,
+.iletisim-form textarea {
+  border: 1.5px solid #e3f0ff;
+  border-radius: 8px;
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  font-family: inherit;
+  background: #f7faff;
+  transition: border-color 0.18s;
+}
+.iletisim-form input:focus,
+.iletisim-form textarea:focus {
+  border-color: #1976d2;
+  outline: none;
+}
+.iletisim-form button.btn {
+  margin-top: 0.7rem;
+  width: 100%;
+}
+.iletisim-form small {
+  color: #888;
+  margin-bottom: 0.3rem;
+}
+.harita {
+  flex: 0 1 340px;
+  min-width: 220px;
+  max-width: 340px;
+  background: rgba(255,255,255,0.85);
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(25, 118, 210, 0.07);
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.iletisim-bilgi {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.08rem;
+}
+.iletisim-bilgi .btn.whatsapp {
+  font-size: 1.05rem;
+  padding: 0.6rem 1.2rem;
+}
+@media (max-width: 900px) {
+  .iletisim-flex {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+  .harita, .iletisim-form {
+    max-width: 100%;
+    min-width: 0;
+  }
+} 

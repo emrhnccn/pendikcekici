@@ -10,7 +10,7 @@ body {
   inset: 0;
   width: 100%;
   height: 100%;
-  background: url('resimler/arackurtarma.jpg') center center/cover no-repeat;
+  background: url('webp/arackurtarma.webp') center center/cover no-repeat;
   opacity: 0.18;
   z-index: 0;
   border-bottom-left-radius: 24px;
